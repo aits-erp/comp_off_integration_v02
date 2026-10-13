@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-23 18:27:49.350557",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_sfsj",
+  "branch",
+  "column_break_mxca",
+  "employee_category",
+  "column_break_qmhj",
+  "assignment_date",
+  "section_break_wjcm",
+  "submit_entries",
+  "section_break_mzbb",
+  "get_employee",
+  "details",
+  "section_break_omjl",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_omjl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ERP Salary Structure Import",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Category",
+   "options": "Employee Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sfsj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mxca",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mzbb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "label": "Details",
+   "options": "ERP Salary Structure Import Details"
+  },
+  {
+   "fieldname": "get_employee",
+   "fieldtype": "Button",
+   "label": "Get Employees"
+  },
+  {
+   "fieldname": "column_break_qmhj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "assignment_date",
+   "fieldtype": "Date",
+   "label": "Assignment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wjcm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "submit_entries",
+   "fieldtype": "Check",
+   "label": "Submit Entries"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Salary Structure",
+   "link_fieldname": "custom_reference_no"
+  },
+  {
+   "link_doctype": "Salary Structure Assignment",
+   "link_fieldname": "custom_reference_no"
+  }
+ ],
+ "modified": "2024-09-10 12:03:30.183554",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "ERP Salary Structure Import",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

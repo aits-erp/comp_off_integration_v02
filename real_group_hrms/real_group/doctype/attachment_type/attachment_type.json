@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 17:09:44.604129",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attachment_type",
+  "attach",
+  "allowed_formats",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "attachment_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Attachment Type",
+   "options": "\nX Ray Film\nECG\nAudiometry\nSpirometry\nUltrasound Abdomen\nForm 21"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attach"
+  },
+  {
+   "columns": 4,
+   "fieldname": "allowed_formats",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Allowed Formats"
+  },
+  {
+   "columns": 2,
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Observations by Doctor"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:05.625100",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Attachment Type",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

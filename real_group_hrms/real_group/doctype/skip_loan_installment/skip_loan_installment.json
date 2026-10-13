@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-06 18:54:18.856912",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_neas",
+  "employee",
+  "employee_name",
+  "active_loans",
+  "column_break_cwtt",
+  "naming_series",
+  "posting_date",
+  "loan_installment",
+  "total_loan_amount_section",
+  "sanctioned_amount",
+  "column_break_igcr",
+  "due_amount",
+  "section_break_gjjm",
+  "upcoming_installment",
+  "section_break_m1ki",
+  "amended_from",
+  "status",
+  "column_break_cibe",
+  "custom_reason_for_rejection"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_m1ki",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Skip Loan Installment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval:doc.active_loans",
+   "fieldname": "total_loan_amount_section",
+   "fieldtype": "Section Break",
+   "label": "Loan Summary"
+  },
+  {
+   "fieldname": "column_break_igcr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "active_loans.return_amount",
+   "fieldname": "due_amount",
+   "fieldtype": "Currency",
+   "label": "Due Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_neas",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "active_loans",
+   "fieldtype": "Link",
+   "label": "Active Loans",
+   "options": "Employee Advance"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gjjm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "upcoming_installment",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Upcoming Installment",
+   "options": "Loan Installment Details"
+  },
+  {
+   "fieldname": "column_break_cwtt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SLI-.YY.-.####"
+  },
+  {
+   "fieldname": "custom_reason_for_rejection",
+   "fieldtype": "Small Text",
+   "label": "Reason For Rejection",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "active_loans.advance_amount",
+   "fieldname": "sanctioned_amount",
+   "fieldtype": "Currency",
+   "label": "Sanctioned Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cibe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "loan_installment",
+   "fieldtype": "Link",
+   "label": "Loan Installment",
+   "options": "Additional Salary"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-24 16:18:03.743339",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Skip Loan Installment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

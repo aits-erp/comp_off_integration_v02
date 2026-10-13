@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 17:09:44.576620",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "relation",
+  "column_break_dg9s",
+  "occupation",
+  "blood_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Relation",
+   "mandatory_depends_on": "eval:doc.name1 != null",
+   "options": "Relation"
+  },
+  {
+   "fieldname": "column_break_dg9s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Occupation",
+   "mandatory_depends_on": "eval:doc.name1 != null",
+   "options": "Occupation"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Blood Group",
+   "mandatory_depends_on": "eval:doc.name1 != null",
+   "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:05.670921",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Employee Family Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:loan_purpose",
+ "creation": "2025-09-30 17:09:45.408276",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_3smy",
+  "loan_purpose",
+  "section_break_bkhh",
+  "loan_amount",
+  "column_break_kego",
+  "number_of_installments",
+  "column_break_dfyp",
+  "installment_amount",
+  "section_break_pdes",
+  "erp_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_3smy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loan_purpose",
+   "fieldtype": "Data",
+   "label": "Loan Purpose",
+   "unique": 1
+  },
+  {
+   "fieldname": "erp_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ERP Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_bkhh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Loan Amount",
+   "options": "0"
+  },
+  {
+   "fieldname": "column_break_kego",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_installments",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Installments",
+   "options": "0"
+  },
+  {
+   "fieldname": "column_break_dfyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "installment_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Installment Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_pdes",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:04.371142",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Loan Purpose",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

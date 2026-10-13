@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "autoname": "format:{company_erp_code}{branch}{tcode}{series_prefix}",
+ "creation": "2025-09-30 17:09:45.453891",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "column_break_tltf",
+  "erp_table_name",
+  "section_break_utfc",
+  "company",
+  "company_erp_code",
+  "column_break_xfuz",
+  "branch",
+  "column_break_musa",
+  "tcode",
+  "column_break_ratt",
+  "series_prefix",
+  "column_break_ifov",
+  "formatter"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tcode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tcode",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tltf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "series_prefix",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Series Prefix",
+   "reqd": 1
+  },
+  {
+   "fieldname": "formatter",
+   "fieldtype": "Select",
+   "label": "Formatter",
+   "options": "\nYYY\nYYM",
+   "reqd": 1
+  },
+  {
+   "description": "Schema.Table_Name\neg. RIPLRR.EMP_BONUS_TRAN",
+   "fieldname": "erp_table_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ERP Table Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_utfc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_musa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ratt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ifov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xfuz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fetch_from": "company.custom_erp_code",
+   "fieldname": "company_erp_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Company ERP Code",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:04.315348",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "ERP Series Master",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

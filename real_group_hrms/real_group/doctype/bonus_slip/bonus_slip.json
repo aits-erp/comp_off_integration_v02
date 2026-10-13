@@ -1,0 +1,254 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2026-09-25 11:05:49.766579",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "column_break_qorc",
+  "company",
+  "column_break_awpm",
+  "branch",
+  "column_break_rbhu",
+  "division",
+  "section_break_rdzw",
+  "salary_slip",
+  "column_break_iaug",
+  "bonus_percentage",
+  "column_break_pylq",
+  "bonus_amount",
+  "column_break_uoxr",
+  "currency",
+  "section_break_wseq",
+  "posting_date",
+  "column_break_nwsc",
+  "erp_bonus_vrno",
+  "column_break_azmq",
+  "erp_bonus_payment_vrno",
+  "column_break_afpr",
+  "retention_bonus",
+  "section_break_xkzd",
+  "erp_bonus_sync",
+  "erp_bonus_payment_sync",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_awpm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rbhu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Division",
+   "options": "Division",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wseq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Posting Date",
+   "no_copy": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nwsc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_bonus_vrno",
+   "fieldtype": "Data",
+   "label": "ERP Bonus VRNO",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_azmq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_bonus_payment_vrno",
+   "fieldtype": "Data",
+   "label": "ERP Bonus Payment VRNO",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_rdzw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "salary_slip",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Salary Slip",
+   "no_copy": 1,
+   "options": "Salary Slip",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uoxr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "retention_bonus",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Retention Bonus",
+   "no_copy": 1,
+   "options": "Retention Bonus",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bonus_amount",
+   "fieldtype": "Currency",
+   "label": "Bonus Amount",
+   "no_copy": 1,
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "INR",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "no_copy": 1,
+   "options": "Currency",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xkzd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "erp_bonus_sync",
+   "fieldtype": "Check",
+   "label": "ERP Bonus Sync",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "erp_bonus_payment_sync",
+   "fieldtype": "Button",
+   "label": "ERP Bonus Payment Sync"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "no_copy": 1,
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qorc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bonus Slip",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_iaug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bonus_percentage",
+   "fieldtype": "Float",
+   "label": "Bonus Percentage",
+   "no_copy": 1,
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pylq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_afpr",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-26 16:53:06.574455",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Bonus Slip",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

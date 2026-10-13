@@ -1,0 +1,221 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 17:09:43.752944",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_details_section",
+  "enable",
+  "column_break_zupm",
+  "user",
+  "basic_info_section",
+  "email",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "column_break_uuof",
+  "full_name",
+  "username",
+  "language",
+  "more_details_tab",
+  "general_details_section",
+  "gender",
+  "birth_date",
+  "column_break_ksrn",
+  "phone",
+  "mobile",
+  "location",
+  "erp_details_section",
+  "department",
+  "company",
+  "column_break_dtgv",
+  "accounting_year",
+  "password_type",
+  "password_reset_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "column_break_zupm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "column_break_uuof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Username"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "more_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "More Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "general_details_section",
+   "fieldtype": "Section Break",
+   "label": "General Details"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birth Date"
+  },
+  {
+   "fieldname": "column_break_ksrn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "length": 10
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "length": 10
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "erp_details_section",
+   "fieldtype": "Section Break",
+   "label": "ERP Details"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_dtgv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accounting_year",
+   "fieldtype": "Link",
+   "label": "Accounting Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "default": "PS",
+   "fieldname": "password_type",
+   "fieldtype": "Data",
+   "label": "Password Type"
+  },
+  {
+   "default": "90",
+   "fieldname": "password_reset_days",
+   "fieldtype": "Int",
+   "label": "Password Reset Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:07.146689",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Real Group User",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,223 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-09-08 13:05:30.430767",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "punch_date",
+  "punch_time",
+  "punch_date_backup",
+  "column_break_ivwh",
+  "area",
+  "terminal_id",
+  "punch_direction",
+  "is_processed",
+  "time_pro_reference_id",
+  "present_day",
+  "section_break_kplq",
+  "message",
+  "company_details_section",
+  "company",
+  "column_break_tuoa",
+  "branch",
+  "column_break_vjnl",
+  "division",
+  "column_break_ktjq",
+  "department"
+ ],
+ "fields": [
+  {
+   "fieldname": "punch_date",
+   "fieldtype": "Data",
+   "label": "Punch Date",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "punch_time",
+   "fieldtype": "Data",
+   "label": "Punch Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ivwh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "terminal_id",
+   "fieldtype": "Data",
+   "label": "Terminal ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "punch_direction",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Punch Direction",
+   "options": "\nI\nO",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_kplq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Text",
+   "label": "Message",
+   "read_only": 1
+  },
+  {
+   "default": "N",
+   "fieldname": "is_processed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Is Processed",
+   "no_copy": 1,
+   "options": "\nN\nY\nE",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "time_pro_reference_id",
+   "fieldtype": "Data",
+   "label": "Time Pro Reference ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "punch_date_backup",
+   "fieldtype": "Data",
+   "label": "Punch Date Backup",
+   "read_only": 1
+  },
+  {
+   "fieldname": "present_day",
+   "fieldtype": "Data",
+   "label": "Present Day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "no_copy": 1,
+   "options": "Company",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_tuoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "no_copy": 1,
+   "options": "Branch",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_vjnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Division",
+   "no_copy": 1,
+   "options": "Division",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ktjq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "no_copy": 1,
+   "options": "Department",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-21 10:25:14.499757",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "bioattendancelog",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager"
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager"
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User"
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll-CREASX"
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll-R"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

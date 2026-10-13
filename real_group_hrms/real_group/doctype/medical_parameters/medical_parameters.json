@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:measure_name",
+ "creation": "2025-09-30 17:09:44.813659",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jdsp",
+  "measure_name",
+  "measure_code",
+  "uom",
+  "parameter_type",
+  "common_parameter"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jdsp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "measure_name",
+   "fieldtype": "Data",
+   "label": "Measure Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "measure_code",
+   "fieldtype": "Data",
+   "label": "Measure Code"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "Medical UOM"
+  },
+  {
+   "fieldname": "parameter_type",
+   "fieldtype": "Select",
+   "label": "Parameter Type",
+   "options": "\nRandom Check\nComplete Blood Count\nDifferential Leucocyte Count\nKidney Function Test\nLiver Function Test\nLipid Profile Test\nUrine Physical Examination\nUrine Chemical Examination\nUrine Microscopic Examination\nBiochemistry\nPulmonary Function Test\nGeneral Examination\nCardiovascular System\nRespiratory System\nGastrointestinal System\nExamination Of Eyes\nIndividual Color Identification\nGastro Urinary System\nAudiometry Examination\nMenstrual and Obstetric History\nScheduled Test\nBoth"
+  },
+  {
+   "default": "0",
+   "fieldname": "common_parameter",
+   "fieldtype": "Check",
+   "label": "Common Parameter"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:05.315352",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Medical Parameters",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
