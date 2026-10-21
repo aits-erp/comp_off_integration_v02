@@ -1,0 +1,28 @@
+.attendance-dashboard-wrapper {
+	margin: 15px;
+	width: 100%;
+}
+
+.card-value {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: left;
+}
+.text-green {
+	color: #29CD42;
+}
+.text-red {
+	color: #CB2929;
+}
+.card-title {
+	font-size: 0.7rem;
+	color: #6c757d;
+	text-align: left;
+	margin-bottom: 0;
+}
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}

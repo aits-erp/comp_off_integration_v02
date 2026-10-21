@@ -1,0 +1,22 @@
+{
+ "actions": [],
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "istable": 1,
+ "module": "Real Group",
+ "name": "Comp Off Source Request",
+ "field_order": ["compensatory_leave_request"],
+ "fields": [
+  {
+   "fieldname": "compensatory_leave_request",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Compensatory Leave Request",
+   "options": "Compensatory Leave Request",
+   "reqd": 1
+  }
+ ],
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

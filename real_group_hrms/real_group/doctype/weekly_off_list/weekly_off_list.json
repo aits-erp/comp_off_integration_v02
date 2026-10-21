@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "autoname": "field:holiday_list_name",
+ "creation": "2025-10-16 13:56:27.977166",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "holiday_list_name",
+  "from_date",
+  "to_date",
+  "column_break_lysz",
+  "total_holidays",
+  "weekly_off",
+  "get_weekly_off_dates",
+  "holidays_section",
+  "holidays",
+  "clear_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "holiday_list_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Weekly off List Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "read_only_depends_on": "eval:doc.from_date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "read_only_depends_on": "eval:doc.to_date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lysz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_holidays",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Weekly offs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weekly_off",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Weekly Off",
+   "no_copy": 1,
+   "options": "\nSunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "get_weekly_off_dates",
+   "fieldtype": "Button",
+   "label": "Add to Weekly offs",
+   "options": "get_weekly_off_dates"
+  },
+  {
+   "fieldname": "holidays_section",
+   "fieldtype": "Section Break",
+   "label": "Weekly offs"
+  },
+  {
+   "fieldname": "holidays",
+   "fieldtype": "Table",
+   "label": "Weekly off",
+   "options": "Weekly Off Holiday"
+  },
+  {
+   "fieldname": "clear_table",
+   "fieldtype": "Button",
+   "label": "Clear Table",
+   "options": "clear_table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-09 20:34:37.924247",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Weekly Off List",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,545 @@
+{
+ "actions": [],
+ "autoname": "field:encryption_key",
+ "creation": "2025-09-30 17:09:45.288035",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_section",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "employee_name",
+  "encryption_key",
+  "column_break_79jf",
+  "gender",
+  "date_of_birth",
+  "salutation",
+  "address_and_contacts_tab",
+  "cell_number",
+  "column_break_gxww",
+  "personal_email",
+  "address_section",
+  "permanent_address",
+  "permanent_accommodation_type",
+  "permanent_district",
+  "permanent_city",
+  "permanent_state",
+  "permanent_country",
+  "permanent_pin_code",
+  "column_break_hgbq",
+  "current_address",
+  "current_accommodation_type",
+  "current_district",
+  "current_city",
+  "current_state",
+  "current_country",
+  "current_pin_code",
+  "emergency_contact_section",
+  "person_to_be_contacted",
+  "column_break_s6sx",
+  "emergency_phone_number",
+  "column_break_i2pq",
+  "relation",
+  "emergency_address",
+  "additional_emergency_contact_section",
+  "emergency_contact",
+  "column_break_gz6n",
+  "addemergency_mobile",
+  "column_break_mkou",
+  "addrelation",
+  "addemergency_address",
+  "bank_details_tab",
+  "bank_name",
+  "pan_number",
+  "provident_fund_account",
+  "column_break_tymm",
+  "bank_ac_no",
+  "iban",
+  "column_break_ly7f",
+  "ifsc_code",
+  "micr_code",
+  "personal_tab",
+  "blood_group",
+  "marital_status",
+  "father_name",
+  "mother_name",
+  "religion",
+  "column_break_xfhf",
+  "aadhar_number",
+  "health_details",
+  "passport_details_section",
+  "passport_number",
+  "valid_upto",
+  "column_break_g5yv",
+  "date_of_issue",
+  "place_of_issue",
+  "family_details_section",
+  "family_details",
+  "profile_tab",
+  "educational_qualification_section",
+  "education",
+  "previous_work_experience_section",
+  "external_work_history",
+  "nominee_tab",
+  "nominee"
+ ],
+ "fields": [
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_79jf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "address_and_contacts_tab",
+   "fieldtype": "Tab Break",
+   "label": "Address and Contacts"
+  },
+  {
+   "fieldname": "cell_number",
+   "fieldtype": "Data",
+   "label": "Mobile "
+  },
+  {
+   "fieldname": "personal_email",
+   "fieldtype": "Data",
+   "label": "Personal Email",
+   "unique": 1
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address "
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "permanent_accommodation_type",
+   "fieldtype": "Select",
+   "label": "Permanent Address Is ",
+   "options": "\nRented\nOwned"
+  },
+  {
+   "fieldname": "permanent_district",
+   "fieldtype": "Link",
+   "label": "Permanent District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "permanent_city",
+   "fieldtype": "Link",
+   "label": "Permanent City",
+   "options": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "permanent_state",
+   "fieldtype": "Link",
+   "label": "Permanent State ",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "permanent_country",
+   "fieldtype": "Link",
+   "label": "Permanent Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "permanent_pin_code",
+   "fieldtype": "Data",
+   "label": "Permanent Pin Code"
+  },
+  {
+   "fieldname": "column_break_hgbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "current_accommodation_type",
+   "fieldtype": "Select",
+   "label": "Current Address Is ",
+   "options": "\nRented\nOwned"
+  },
+  {
+   "fieldname": "current_district",
+   "fieldtype": "Link",
+   "label": "Current District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_city",
+   "fieldtype": "Link",
+   "label": "Current City",
+   "options": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_state",
+   "fieldtype": "Link",
+   "label": "Current State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_country",
+   "fieldtype": "Link",
+   "label": "Current Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_pin_code",
+   "fieldtype": "Data",
+   "label": "Current Pin Code"
+  },
+  {
+   "fieldname": "emergency_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Emergency Contact "
+  },
+  {
+   "fieldname": "person_to_be_contacted",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Emergency Contact Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emergency_address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Emergency Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_s6sx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emergency_phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Emergency Mobile ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_i2pq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Link",
+   "label": "Relation",
+   "options": "Relation"
+  },
+  {
+   "fieldname": "additional_emergency_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Emergency Contact"
+  },
+  {
+   "fieldname": "emergency_contact",
+   "fieldtype": "Data",
+   "label": "Emergency Contact"
+  },
+  {
+   "fieldname": "addemergency_address",
+   "fieldtype": "Small Text",
+   "label": "Add.Emergency Address "
+  },
+  {
+   "fieldname": "column_break_gz6n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "addemergency_mobile",
+   "fieldtype": "Data",
+   "label": "Add.Emergency Mobile "
+  },
+  {
+   "fieldname": "column_break_mkou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "addrelation",
+   "fieldtype": "Link",
+   "label": "Add.Relation ",
+   "options": "Relation"
+  },
+  {
+   "fieldname": "bank_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bank Details "
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name "
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "PAN Number"
+  },
+  {
+   "fieldname": "provident_fund_account",
+   "fieldtype": "Data",
+   "label": "Provident Fund Account"
+  },
+  {
+   "fieldname": "column_break_tymm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_ac_no",
+   "fieldtype": "Data",
+   "label": "Bank A/C No."
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "label": "International Bank A/C No"
+  },
+  {
+   "fieldname": "column_break_ly7f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "micr_code",
+   "fieldtype": "Data",
+   "label": "MICR Code"
+  },
+  {
+   "fieldname": "personal_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "label": "Religion",
+   "options": "Religion",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xfhf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aadhar_number",
+   "fieldtype": "Data",
+   "label": "Aadhar Number",
+   "reqd": 1
+  },
+  {
+   "description": "Here you can maintain height, weight, allergies, medical concerns etc.",
+   "fieldname": "health_details",
+   "fieldtype": "Small Text",
+   "label": "Health Details"
+  },
+  {
+   "fieldname": "passport_details_section",
+   "fieldtype": "Section Break",
+   "label": "Passport Details"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number "
+  },
+  {
+   "fieldname": "valid_upto",
+   "fieldtype": "Data",
+   "label": "Valid Upto"
+  },
+  {
+   "fieldname": "column_break_g5yv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Data",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "place_of_issue",
+   "fieldtype": "Data",
+   "label": "Place of Issue"
+  },
+  {
+   "fieldname": "family_details_section",
+   "fieldtype": "Section Break",
+   "label": "Family Details"
+  },
+  {
+   "fieldname": "family_details",
+   "fieldtype": "Table",
+   "label": "Family Details",
+   "options": "Employee Family Details"
+  },
+  {
+   "fieldname": "profile_tab",
+   "fieldtype": "Tab Break",
+   "label": "Profile"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "educational_qualification_section",
+   "fieldtype": "Section Break",
+   "label": "Educational Qualification"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Table",
+   "label": "Education",
+   "options": "Employee Education"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "previous_work_experience_section",
+   "fieldtype": "Section Break",
+   "label": "Previous Work Experience"
+  },
+  {
+   "fieldname": "external_work_history",
+   "fieldtype": "Table",
+   "label": "External Work History",
+   "options": "Employee External Work History"
+  },
+  {
+   "fieldname": "encryption_key",
+   "fieldtype": "Data",
+   "label": "encryption_key",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_gxww",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nominee_tab",
+   "fieldtype": "Tab Break",
+   "label": "Nominee"
+  },
+  {
+   "fieldname": "nominee",
+   "fieldtype": "Table",
+   "label": "Nominee",
+   "options": "Employee Nominee",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:04.504595",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Employee Onboarding Form",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

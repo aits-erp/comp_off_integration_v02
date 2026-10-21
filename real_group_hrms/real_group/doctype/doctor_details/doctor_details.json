@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 17:09:44.653484",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor",
+  "qualification",
+  "registration"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Doctor"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "registration",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Registration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:05.581847",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Doctor Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

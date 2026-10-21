@@ -1,0 +1,562 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-08-14 14:24:45.428917",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee_code",
+  "employee_name",
+  "date_of_birth",
+  "age",
+  "gender",
+  "column_break_eqik",
+  "report_date",
+  "department",
+  "division",
+  "blood_group",
+  "date_of_joining",
+  "service_years",
+  "aadhar_card",
+  "column_break_f6ov",
+  "date_of_medical_examination",
+  "esic_no",
+  "type_of_examination",
+  "company",
+  "designation",
+  "section_break_dlxq",
+  "random_check",
+  "biochemistry_section",
+  "biochemistry",
+  "complete_blood_count_section",
+  "complete_blood_count",
+  "differential_leucocyte_count_section",
+  "differential_leucocyte_count",
+  "kidney_function_test_section",
+  "kidney_function_test",
+  "liver_function_test_section",
+  "liver_function_test",
+  "lipid_profile_test_section",
+  "lipid_profile_test",
+  "section_break_f2rc",
+  "urine_physical_examination",
+  "urine_chemical_examination_section",
+  "urine_chemical_examination",
+  "urine_microscopic_examination_section",
+  "urine_microscopic_examination",
+  "pulmonary_function_test_section",
+  "pulmonary_function_test",
+  "general_examination_section",
+  "general_examination",
+  "cardiovascular_system_section",
+  "cardiovascular_system",
+  "respiratory_system_section",
+  "respiratory_system",
+  "gastrointestinal_system_section",
+  "gastrointestinal_system",
+  "examination_of_eyes_section",
+  "examination_of_eyes",
+  "individual_color_identification_section",
+  "individual_color_identification",
+  "gastro_urinary_system_section",
+  "gastro_urinary_system",
+  "audiometry_examination_section",
+  "audiometry_examination",
+  "menstrual_and_obstetric_history_section",
+  "menstrual_and_obstetric_history",
+  "section_break_dvbz",
+  "attachment_type",
+  "doctor_details_section",
+  "doctor",
+  "column_break_tkhm",
+  "qualification",
+  "column_break_kctv",
+  "registration",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "MTH-.YYYY.-",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Code",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_code.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.date_of_birth",
+   "fetch_if_empty": 1,
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Of Birth",
+   "read_only": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.gender",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "column_break_eqik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Report Date",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_code.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.custom_division",
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.blood_group",
+   "fetch_if_empty": 1,
+   "fieldname": "blood_group",
+   "fieldtype": "Data",
+   "label": "Blood Group",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.date_of_joining",
+   "fetch_if_empty": 1,
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Of Joining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "service_years",
+   "fieldtype": "Data",
+   "label": "Service Years",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.custom_aadhar_number",
+   "fieldname": "aadhar_card",
+   "fieldtype": "Data",
+   "label": "Aadhar Card"
+  },
+  {
+   "fieldname": "column_break_f6ov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_of_medical_examination",
+   "fieldtype": "Date",
+   "label": "Date of Medical Examination",
+   "reqd": 1
+  },
+  {
+   "fieldname": "esic_no",
+   "fieldtype": "Data",
+   "label": "ESIC No"
+  },
+  {
+   "fieldname": "type_of_examination",
+   "fieldtype": "Select",
+   "label": "Type of Examination",
+   "options": "\nScheduled Test\nRandom Test"
+  },
+  {
+   "fetch_from": "employee_code.company",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_dlxq",
+   "fieldtype": "Section Break",
+   "label": "Body Check"
+  },
+  {
+   "fieldname": "random_check",
+   "fieldtype": "Table",
+   "options": "Random Check"
+  },
+  {
+   "fieldname": "biochemistry_section",
+   "fieldtype": "Section Break",
+   "label": "Biochemistry"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "biochemistry",
+   "fieldtype": "Table",
+   "options": "Biochemistry"
+  },
+  {
+   "fieldname": "complete_blood_count_section",
+   "fieldtype": "Section Break",
+   "label": "Complete Blood Count"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "complete_blood_count",
+   "fieldtype": "Table",
+   "options": "Complete Blood Count"
+  },
+  {
+   "fieldname": "differential_leucocyte_count_section",
+   "fieldtype": "Section Break",
+   "label": "Differential Leucocyte Count"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "differential_leucocyte_count",
+   "fieldtype": "Table",
+   "options": "Differential Leucocyte Count"
+  },
+  {
+   "fieldname": "kidney_function_test_section",
+   "fieldtype": "Section Break",
+   "label": "Kidney Function Test"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "kidney_function_test",
+   "fieldtype": "Table",
+   "options": "Kidney Function Test"
+  },
+  {
+   "fieldname": "liver_function_test_section",
+   "fieldtype": "Section Break",
+   "label": "Liver Function Test"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "liver_function_test",
+   "fieldtype": "Table",
+   "options": "Liver Function Test"
+  },
+  {
+   "fieldname": "lipid_profile_test_section",
+   "fieldtype": "Section Break",
+   "label": "Lipid Profile Test"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "lipid_profile_test",
+   "fieldtype": "Table",
+   "options": "Lipid Profile Test"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination=='Scheduled Test'",
+   "fieldname": "section_break_f2rc",
+   "fieldtype": "Section Break",
+   "label": "Urine Physical Examination"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "urine_physical_examination",
+   "fieldtype": "Table",
+   "options": "Urine Physical Examination"
+  },
+  {
+   "fieldname": "urine_chemical_examination_section",
+   "fieldtype": "Section Break",
+   "label": "Urine Chemical Examination"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "urine_chemical_examination",
+   "fieldtype": "Table",
+   "options": "Urine Chemical Examination"
+  },
+  {
+   "fieldname": "urine_microscopic_examination_section",
+   "fieldtype": "Section Break",
+   "label": "Urine Microscopic Examination"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "urine_microscopic_examination",
+   "fieldtype": "Table",
+   "options": "Urine Microscopic Examination"
+  },
+  {
+   "fieldname": "pulmonary_function_test_section",
+   "fieldtype": "Section Break",
+   "label": "Pulmonary Function Test"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "pulmonary_function_test",
+   "fieldtype": "Table",
+   "options": "Pulmonary Function Test"
+  },
+  {
+   "fieldname": "general_examination_section",
+   "fieldtype": "Section Break",
+   "label": "General Examination"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "general_examination",
+   "fieldtype": "Table",
+   "options": "General Examination"
+  },
+  {
+   "fieldname": "cardiovascular_system_section",
+   "fieldtype": "Section Break",
+   "label": "Cardiovascular System"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "cardiovascular_system",
+   "fieldtype": "Table",
+   "options": "Cardiovascular System"
+  },
+  {
+   "fieldname": "respiratory_system_section",
+   "fieldtype": "Section Break",
+   "label": "Respiratory System"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "respiratory_system",
+   "fieldtype": "Table",
+   "options": "Respiratory System"
+  },
+  {
+   "fieldname": "gastrointestinal_system_section",
+   "fieldtype": "Section Break",
+   "label": "Gastrointestinal System"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "gastrointestinal_system",
+   "fieldtype": "Table",
+   "options": "Gastrointestinal System"
+  },
+  {
+   "fieldname": "examination_of_eyes_section",
+   "fieldtype": "Section Break",
+   "label": "Examination Of Eyes"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "examination_of_eyes",
+   "fieldtype": "Table",
+   "options": "Examination Of Eyes"
+  },
+  {
+   "fieldname": "gastro_urinary_system_section",
+   "fieldtype": "Section Break",
+   "label": "Gastro Urinary System"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "gastro_urinary_system",
+   "fieldtype": "Table",
+   "options": "Gastro Urinary System"
+  },
+  {
+   "fieldname": "menstrual_and_obstetric_history_section",
+   "fieldtype": "Section Break",
+   "label": "Menstrual and Obstetric History"
+  },
+  {
+   "depends_on": "eval: doc.gender == \"Female\"",
+   "fieldname": "menstrual_and_obstetric_history",
+   "fieldtype": "Table",
+   "options": "Menstrual and Obstetric History"
+  },
+  {
+   "fieldname": "section_break_dvbz",
+   "fieldtype": "Section Break",
+   "label": "Attachment Type"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "attachment_type",
+   "fieldtype": "Table",
+   "options": "Attachment Type"
+  },
+  {
+   "fieldname": "doctor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Doctor Details"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Data",
+   "label": "Doctor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tkhm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kctv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registration",
+   "fieldtype": "Data",
+   "label": "Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Medical History",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "audiometry_examination_section",
+   "fieldtype": "Section Break",
+   "label": "Audiometry Examination"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "audiometry_examination",
+   "fieldtype": "Table",
+   "options": "Audiomentry Examination"
+  },
+  {
+   "depends_on": "eval:doc.type_of_examination == \"Scheduled Test\"",
+   "fieldname": "individual_color_identification_section",
+   "fieldtype": "Section Break",
+   "label": "Individual Color Identification"
+  },
+  {
+   "fieldname": "individual_color_identification",
+   "fieldtype": "Table",
+   "options": "Individual Colour Identification"
+  },
+  {
+   "fetch_from": "employee_code.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Employee",
+   "link_doctype": "Employee",
+   "link_fieldname": "employee"
+  }
+ ],
+ "modified": "2024-11-14 14:32:27.069549",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Medical History",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

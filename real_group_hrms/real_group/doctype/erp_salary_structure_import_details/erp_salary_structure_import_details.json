@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 17:09:45.521103",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "income_tax_slab",
+  "column_break_fcaa",
+  "salary_structure"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "salary_structure",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Salary Structure",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fcaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "income_tax_slab",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Income Tax Slab",
+   "options": "Income Tax Slab"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:04.234259",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "ERP Salary Structure Import Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

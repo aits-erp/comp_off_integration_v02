@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 17:09:45.110358",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "birthday_wish_subject",
+  "birthday_wish_message",
+  "column_break_pwfm",
+  "email_account",
+  "easy_time_pro_connection_settings_section",
+  "time_pro_host",
+  "time_pro_database",
+  "time_pro_last_sync_on",
+  "column_break_jble",
+  "time_pro_port",
+  "time_pro_user",
+  "time_pro_password",
+  "salary_component_settings_section",
+  "component_for_incentive",
+  "column_break_zgvn",
+  "esic_deduction_limit",
+  "pf_basic_limit",
+  "section_break_lrim",
+  "oracle_credentials_details"
+ ],
+ "fields": [
+  {
+   "default": "<p>Hello!!</p>\n\n<p>Wishing you a very Happy Birthday</p>\n\n<p>May this year bring more happiness and success in you life.</p>\n\n<br>\n\nRegards<br>\nUmesh Agrawal<br>\nMD, REAL Group",
+   "fieldname": "birthday_wish_message",
+   "fieldtype": "HTML Editor",
+   "label": "Birthday Wish Message"
+  },
+  {
+   "default": "Happy Birthday",
+   "fieldname": "birthday_wish_subject",
+   "fieldtype": "Data",
+   "label": "Birthday Wish Subject"
+  },
+  {
+   "fieldname": "easy_time_pro_connection_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Easy Time Pro Connection Settings"
+  },
+  {
+   "fieldname": "time_pro_host",
+   "fieldtype": "Data",
+   "label": "Time Pro Host"
+  },
+  {
+   "fieldname": "time_pro_database",
+   "fieldtype": "Data",
+   "label": "Time Pro Database"
+  },
+  {
+   "fieldname": "column_break_jble",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time_pro_port",
+   "fieldtype": "Data",
+   "label": "Time Pro Port"
+  },
+  {
+   "fieldname": "time_pro_user",
+   "fieldtype": "Data",
+   "label": "Time Pro User"
+  },
+  {
+   "fieldname": "time_pro_password",
+   "fieldtype": "Password",
+   "label": "Time Pro Password"
+  },
+  {
+   "fieldname": "time_pro_last_sync_on",
+   "fieldtype": "Datetime",
+   "label": "Time Pro Last Sync On"
+  },
+  {
+   "fieldname": "email_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Email Account",
+   "options": "Email Account"
+  },
+  {
+   "fieldname": "column_break_pwfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salary_component_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Salary Component Settings"
+  },
+  {
+   "fieldname": "component_for_incentive",
+   "fieldtype": "Link",
+   "label": "Component For Incentive",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "column_break_zgvn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "21000",
+   "fieldname": "esic_deduction_limit",
+   "fieldtype": "Float",
+   "label": "ESIC Deduction Limit"
+  },
+  {
+   "fieldname": "section_break_lrim",
+   "fieldtype": "Section Break",
+   "label": "Oracle Credentials"
+  },
+  {
+   "fieldname": "oracle_credentials_details",
+   "fieldtype": "Table",
+   "options": "Oracle Credentials"
+  },
+  {
+   "fieldname": "pf_basic_limit",
+   "fieldtype": "Int",
+   "label": "PF Basic Limit",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-06-23 16:45:02.843876",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Real Group Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

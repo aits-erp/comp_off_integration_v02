@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 17:09:44.281591",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medical_parameters",
+  "medical_code",
+  "uom",
+  "value"
+ ],
+ "fields": [
+  {
+   "fieldname": "medical_parameters",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medical Parameters",
+   "options": "Medical Parameters",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "medical_parameters.measure_code",
+   "fieldname": "medical_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medical Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "medical_parameters.uom",
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-30 18:40:06.152626",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Pulmonary Function Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

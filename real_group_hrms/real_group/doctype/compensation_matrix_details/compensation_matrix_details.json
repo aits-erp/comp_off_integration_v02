@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-30 17:09:45.066460",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_hrs",
+  "to_hrs",
+  "c_off_credit"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_hrs",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Extra Hours Start (HH:MM:SS)"
+  },
+  {
+   "fieldname": "to_hrs",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Extra Hours End (HH:MM:SS)"
+  },
+  {
+   "fieldname": "c_off_credit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "C-Off / Incentive Credit",
+   "precision": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-25 20:45:25.417277",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Compensation Matrix Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

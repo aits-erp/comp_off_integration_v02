@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "creation": "2024-08-20 15:49:09.058019",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_umb1",
+  "column_break_ipax",
+  "employee",
+  "company",
+  "branch",
+  "from_date",
+  "to_date",
+  "column_break_pobs",
+  "division",
+  "department",
+  "status",
+  "reprocess_attendance_bulk",
+  "section_break_msfd",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_umb1",
+   "fieldtype": "Section Break",
+   "label": "Filters"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Reprocess Attendance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ipax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_msfd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Division",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pobs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reprocess_attendance_bulk",
+   "fieldtype": "Link",
+   "label": "Reprocess Attendance Bulk",
+   "no_copy": 1,
+   "options": "Reprocess Attendance Bulk",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nIn Progress\nCompleted\nError",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Attendance",
+   "link_fieldname": "custom_reprocess_reference"
+  },
+  {
+   "link_doctype": "Leave Allocation",
+   "link_fieldname": "custom_reprocess_reference"
+  },
+  {
+   "link_doctype": "Additional Salary",
+   "link_fieldname": "custom_reprocess_reference"
+  }
+ ],
+ "modified": "2026-06-01 16:26:04.302290",
+ "modified_by": "Administrator",
+ "module": "Real Group",
+ "name": "Reprocess Attendance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "from_date",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee",
+ "track_changes": 1
+}
